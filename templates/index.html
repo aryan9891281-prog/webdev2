@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Editkaro.in — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+   <!-- Link CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <meta name="description" content="Editkaro.in portfolio — social media marketing and video editing agency. Short-form, long-form, gaming, football edits, eCommerce ads, documentaries, color grading, anime videos, and ads." />
+</head>
+<body>
+  <div class="bg-accent"></div>
+
+  <header class="hero" role="banner">
+    <div class="hero-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EK</div>
+        <div class="brand-text">
+          <h1>Editkaro<span>.in</span></h1>
+          <p>Social Media Marketing • Video Editing Agency</p>
+        </div>
+      </div>
+
+      <p class="tagline">
+        Crafting scroll-stopping content across <strong>short-form</strong>, <strong>long-form</strong>, <strong>gaming</strong>, <strong>sports</strong>,
+        <strong>eCommerce</strong>, <strong>documentary</strong>, <strong>color grading</strong>, <strong>anime</strong>, and <strong>ads</strong>.
+      </p>
+
+      <nav class="filters" aria-label="Video categories">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="short">Short-form</button>
+        <button class="filter-btn" data-filter="long">Long-form</button>
+        <button class="filter-btn" data-filter="gaming">Gaming</button>
+        <button class="filter-btn" data-filter="football">Football</button>
+        <button class="filter-btn" data-filter="ecom">eCommerce Ads</button>
+        <button class="filter-btn" data-filter="documentary">Documentary</button>
+        <button class="filter-btn" data-filter="grading">Color Grading</button>
+        <button class="filter-btn" data-filter="anime">Anime</button>
+        <button class="filter-btn" data-filter="ads">Ads</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container" role="main">
+    <section class="gallery" aria-label="Portfolio videos">
+      <!-- EXAMPLE CARD: Replace thumbnails/links with real client work -->
+      <!-- Short-form -->
+      <article class="card" data-category="short" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200&auto=format&fit=crop" alt="Short-form edit thumbnail" />
+          <button class="play" aria-label="Play Short-form Reel" data-video-type="youtube" data-video-src="https://www.youtube.com/embed/5O0YDHiosD0?autoplay=1&rel=0">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>Short-form Reel</h3>
+          <p>Fast-paced edits for IG Reels/TikTok with trend sync.</p>
+          <span class="pill">Short-form</span>
+        </div>
+      </article>
+
+      <!-- Long-form -->
+      <article class="card" data-category="long" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop" alt="Long-form edit thumbnail" />
+          <button class="play" aria-label="Play Long-form Video" data-video-type="youtube" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>Long-form Story</h3>
+          <p>Narrative-driven content engineered for retention.</p>
+          <span class="pill">Long-form</span>
+        </div>
+      </article>
+
+      <!-- Gaming -->
+      <article class="card" data-category="gaming" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop" alt="Gaming montage thumbnail" />
+          <button class="play" aria-label="Play Gaming Montage" data-video-type="vimeo" data-video-src="https://player.vimeo.com/video/76979871?autoplay=1">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>Gaming Montage</h3>
+          <p>High-energy highlights with SFX, speed ramps, HUDs.</p>
+          <span class="pill">Gaming</span>
+        </div>
+      </article>
+
+      <!-- Football -->
+      <article class="card" data-category="football" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1200&auto=format&fit=crop" alt="Football edit thumbnail" />
+          <button class="play" aria-label="Play Football Edit" data-video-type="youtube" data-video-src="https://www.youtube.com/embed/kXYiU_JCYtU?autoplay=1&rel=0">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>Football Edit</h3>
+          <p>Dynamic sports cuts, speed transitions, crowd hype.</p>
+          <span class="pill">Football</span>
+        </div>
+      </article>
+
+      <!-- eCommerce Ads -->
+      <article class="card" data-category="ecom" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop" alt="eCommerce ad thumbnail" />
+          <button class="play" aria-label="Play eCommerce Ad" data-video-type="youtube" data-video-src="https://www.youtube.com/embed/aqz-KE-bpKQ?autoplay=1&rel=0">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>eCommerce Ad</h3>
+          <p>Product-focused creatives optimized for ROAS.</p>
+          <span class="pill">eCommerce</span>
+        </div>
+      </article>
+
+      <!-- Documentary -->
+      <article class="card" data-category="documentary" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop" alt="Documentary style thumbnail" />
+          <button class="play" aria-label="Play Documentary Style" data-video-type="youtube" data-video-src="https://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1&rel=0">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>Documentary Style</h3>
+          <p>Interview-led storytelling with cinematic pacing.</p>
+          <span class="pill">Documentary</span>
+        </div>
+      </article>
+
+      <!-- Color Grading -->
+      <article class="card" data-category="grading" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1200&auto=format&fit=crop" alt="Color grading thumbnail" />
+          <button class="play" aria-label="Play Color Grading Showcase" data-video-type="youtube" data-video-src="https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1&rel=0">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>Color Grading Reel</h3>
+          <p>Moody LUTs, film emulation, and calibrated skin tones.</p>
+          <span class="pill">Color Grading</span>
+        </div>
+      </article>
+
+      <!-- Anime -->
+      <article class="card" data-category="anime" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1606117331085-5760e3b58520?q=80&w=1200&auto=format&fit=crop" alt="Anime edit thumbnail" />
+          <button class="play" aria-label="Play Anime Edit" data-video-type="youtube" data-video-src="https://www.youtube.com/embed/3JZ_D3ELwOQ?autoplay=1&rel=0">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>Anime Edit</h3>
+          <p>Beat-synced transitions and kinetic typography.</p>
+          <span class="pill">Anime</span>
+        </div>
+      </article>
+
+      <!-- Ads -->
+      <article class="card" data-category="ads" tabindex="0">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1512291313935-f4a52d8e8d53?q=80&w=1200&auto=format&fit=crop" alt="Ad creative thumbnail" />
+          <button class="play" aria-label="Play Ad Creative" data-video-type="youtube" data-video-src="https://www.youtube.com/embed/tAGnKpE4NCI?autoplay=1&rel=0">
+            ▶
+          </button>
+        </div>
+        <div class="meta">
+          <h3>Ad Creative</h3>
+          <p>Hook-CTA frameworks tested for conversion.</p>
+          <span class="pill">Ads</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Lightbox / Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Video player" tabindex="-1">
+    <button class="lightbox-close" aria-label="Close video (Esc)">✕</button>
+    <div class="lightbox-body" role="document">
+      <!-- Video iframes are injected here -->
+    </div>
+  </div>
+
+  <footer class="cta">
+    <div class="cta-inner">
+      <h2>Let’s Edit Your Next Hit</h2>
+      <p>Need scroll-stopping content for your brand? Get in touch with Editkaro.in today.</p>
+      <a class="btn-primary" href="mailto:contact@editkaro.in">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- <script src="script.js"></script> -->
+    <!-- Link JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
